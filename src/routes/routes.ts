@@ -1,6 +1,6 @@
 /* tslint:disable */
 import { Controller, ValidationService, FieldErrors, ValidateError, TsoaRoute } from 'tsoa';
-import { TodoController } from './todo.controller';
+import { TodoController } from '../controllers/todo.controller';
 import * as express from 'express';
 
 const models: TsoaRoute.Models = {

@@ -3,9 +3,9 @@ import * as cors from 'cors';
 import * as bodyparser from 'body-parser';
 
 import { requestLoggerMiddleware } from './request.logger.middleware';
-import './todo.controller';
+import './controllers/todo.controller';
 
-import { RegisterRoutes } from './routes';
+import { RegisterRoutes } from './routes/routes';
 import * as swaggerUi from 'swagger-ui-express';
 
 const app = express();

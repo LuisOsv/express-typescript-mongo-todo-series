@@ -1,4 +1,4 @@
-import { TodoModel, ITodo } from './todo';
+import { TodoModel, ITodo } from '../models/todo';
 import { Controller, Route, Get, Post, BodyProp, Put, Delete } from 'tsoa';
 
 @Route('/todo')
