@@ -6,7 +6,6 @@ import { requestLoggerMiddleware } from './request.logger.middleware';
 import './controllers/todo.controller';
 import './controllers/kudos.controller';
 
-//import { RegisterRoutes } from './routes/todo.routes';
 import { RegisterRoutes } from './routes/kudos.routes';
 import * as swaggerUi from 'swagger-ui-express';
 
