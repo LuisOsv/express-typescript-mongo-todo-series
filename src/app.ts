@@ -3,7 +3,6 @@ import * as cors from 'cors';
 import * as bodyparser from 'body-parser';
 
 import { requestLoggerMiddleware } from './request.logger.middleware';
-import './controllers/todo.controller';
 import './controllers/kudos.controller';
 
 import { RegisterRoutes } from './routes/kudos.routes';
