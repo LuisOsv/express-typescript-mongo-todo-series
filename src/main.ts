@@ -4,7 +4,7 @@ import * as http from 'http';
 import * as mongoose from 'mongoose';
 
 const PORT = 8080;
-const MONGO_URI = 'mongodb://localhost:27017/todo';
+const MONGO_URI = 'mongodb://localhost:27017/kudos';
 const server = http.createServer(app);
 server.listen(PORT);
 server.on('listening', async () => {
@@ -14,6 +14,7 @@ server.on('listening', async () => {
 		console.info('Connected to Mongo.');
 	});
 	mongoose.connection.on('error', (err: any) => {
+		console.info('Not able to connect to Mongo.');
 		console.error(err);
 	});
 });
